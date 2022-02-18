@@ -5,7 +5,7 @@ function getFlags(flag) {
     return `[${flag}: not exist]`;
   }
 
-  const value = process.argv[index + 1];
+  const value = process.argv[index + 2];
   
   if (value === undefined || value.slice(0, 2) === '--') {
     return `[${flag}: is empty]`;
